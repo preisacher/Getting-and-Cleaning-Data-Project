@@ -17,6 +17,8 @@ NOTE: I only included the mean and std columns for analysis per the Project requ
 
 I calculated the mean by use of the ddply function from the plyr package.  
 
+I output my tidy data set into a text file called: my_tidy_dataset_norownames.txt
+
 
 #Description of input data from the source web page (see url under "description" above)
 ===================================================================================================
