@@ -1,3 +1,8 @@
+The datasets used were loaded from Human Activity Recognition Using Smartphones Dataset
+url:  http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip
+
+#The following is the code book describing the dataset from that website:
+
 ===================================================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
