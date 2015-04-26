@@ -92,8 +92,9 @@ completeDataSet <- cbind(dataForXAxis, dataForYAxis, indexedSubjectData)
 ##################################################################################### 
 
 # used ncol(completeDataSet) to see I had 88 cols
-# Last 2 cols are Activity and Subject so I use 1 to 86 for the mean function in the next statement  
-myTidyDataSet <- ddply(completeDataSet, .(Subject, Activity), function(x) colMeans(x[, 1:86])) 
+# Last 2 cols are Activity and Subject so subtract those
+numVars <- ncol(completeDataSet) - 2
+myTidyDataSet <- ddply(completeDataSet, .(Subject, Activity), function(x) colMeans(x[, 1:numVars])) 
 write.table(myTidyDataSet, file = "./my_tidy_dataset_norownames.txt", row.name=FALSE) 
 
 print("Done")
