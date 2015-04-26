@@ -1,7 +1,10 @@
-The datasets used were loaded from Human Activity Recognition Using Smartphones Dataset
-url:  http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip
+#Getting and Cleaning Data Project
+Philippe Reisacher
 
-#The following is the code book describing the dataset from that website:
+# Description
+This document provides additional information about the variables, data and transformations used for the Project.
+A full description of the data I used to produce the tidy data set output can be found at:
+UCI Machine Learning Repository "Center for Machine Learning and Intelligent systems" http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 ===================================================================================================
 Human Activity Recognition Using Smartphones Dataset
