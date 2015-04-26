@@ -4,9 +4,21 @@ Philippe Reisacher
 # Description
 This document provides additional information about the variables, data and transformations used for the Project.
 A full description of the data I used to produce the tidy data set output can be found at:
-UCI Machine Learning Repository "Center for Machine Learning and Intelligent systems" http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+UCI Machine Learning Repository "Center for Machine Learning and Intelligent systems" http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-#Description of input data
+Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+
+# What I did in this project:
+I took the test and training data contained in the X_train.txt, y_train.txt, X_test.txt and y_test.txt from the downloaded files and merged these together with rbind to form a complete set of observations for the project.  I then applied the test subject data along with the X_data.txt and y_data.txt for further analysis.
+
+NOTE: I only included the mean and std columns for analysis per the Project requirements.
+
+ After gathering all the test subject data and merging it with the training data, I took the activities and merged them into a completeDataSet data.frame containing all the data from training and testing with the X and Y axis labels X being the mean and standard deviation columns and Y being the Subjects with each Activity per Subject.
+
+I calculated the mean by use of the ddply function from the plyr package.  
+
+
+#Description of input data from the source web page (see url under "description" above)
 ===================================================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
